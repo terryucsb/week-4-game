@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+<!-- when i try to add the reset.css, it changed my entire page combining all my divs-->
+
+</head>
+
+<body>
+<!-- display of title of game -->
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+
+<!-- display instructions for users -->	
+	<div class="instructions">
+	<h3> Game Instructions</h3>
+	</br>
+	<ol>
+		<li> A random number will appear at the start of the game that you have to match by clicking on different on crystals.</br> Each crystals will have different values each trial of the game.</li>
+		<li> There are four crystals below: </li>
+		<ul>
+			<li id="blue"> blue </li>
+			<li id="green"> green </li>
+			<li id="red"> red </li>
+			<li id="yellow"> yellow </li>
+		</ul>
+
+		<li> Clicking on each crystals will add different points to your total score. </li>
+		<li> You win the game by matching your total score to the random number </li>
+		<li> You have to click on the crystal to see the increase of value that each crystal holds </li>
+		<li> Each time the game is restarted, the value of cyrstals will be different as well </li>
+	</ol>
+	</div>
+
+	<!--the random number you have to match -->
+
+	<div class="numberMatch">
+		<h3> Number: 
+			<span id="randomNumber"></span>
+		</h3>
+	</div>
+
+	<!-- Win and Loss Counter -->
+
+	<div class="winsAndLosses">
+		<h3> Wins:
+			<span id="numberWins"></span>
+				</br>
+			Losses:
+			<span id="numberLosses"></span>
+		</h3>
+	</div>
+
+	<!-- the four gem images and click function (label 1-4)
+	1) blue, 2) green, 3) red, 4)yellow -->
+
+	<div class="gems">
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+
+	<!-- total amount value user has -->
+
+	<div class="userTotal">
+		<h3> Your total score:
+			<span id="scoreTotal"></span>
+		</h3>
+	</div>
+
+	<!-- link javascript/jquery-->
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+	<script type="text/javascript" src="assets/javascript.js"></script>
+
+
+</body>
+</html>
