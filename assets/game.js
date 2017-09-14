@@ -1,7 +1,7 @@
 //Create a function that selects a number between 19-120.//
 //to do that we need 120-19= 101 + 19 //
 
-$ (document).ready (function()){
+$ (document).ready (function(){
 	var Random=Math.floor(Math.random()*101+19)
 
 // next have to append var=random to randomNumber id in html//
@@ -24,7 +24,7 @@ $ (document).ready (function()){
 	$('#one').on('click',function(){
     userTotal = userTotal + n1;
     console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
+    $('#scoreTotal').text(userTotal); 
     //sets win/lose conditions
         if (userTotal == Random){
           yay();
@@ -119,4 +119,4 @@ function reset(){
 	$('#scoreTotal').text(userTotal);
 	}
 
-};
+});
